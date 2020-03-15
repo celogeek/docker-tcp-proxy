@@ -29,6 +29,7 @@ global
 defaults
     log global
     mode tcp
+    option tcpka
     timeout client "$TIMEOUT_CLIENT"
     timeout client-fin "$TIMEOUT_CLIENT_FIN"
     timeout connect "$TIMEOUT_CONNECT"
