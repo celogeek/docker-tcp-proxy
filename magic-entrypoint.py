@@ -29,7 +29,12 @@ global
 defaults
     log global
     mode tcp
+    retries 3
+    maxconn 4096
+    option tcplog
     option tcpka
+    option clitcpka
+    option srvtcpka
     timeout client "$TIMEOUT_CLIENT"
     timeout client-fin "$TIMEOUT_CLIENT_FIN"
     timeout connect "$TIMEOUT_CONNECT"
